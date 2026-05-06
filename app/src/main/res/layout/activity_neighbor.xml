@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FAFAFA">
+
+    <!-- 🔝 TOOLBAR -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="#10CA8F"
+        android:gravity="center_vertical"
+        android:paddingStart="12dp"
+        android:paddingEnd="8dp"
+        android:elevation="6dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Discovered Neighbors"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!-- 🔄 Refresh Button (fixed) -->
+        <ImageButton
+            android:id="@+id/btnNeighborRefresh"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="#00000000"
+            android:src="@drawable/ic_refresh"
+            android:padding="6dp"
+            app:tint="#FFFFFF" />
+    </LinearLayout>
+
+    <!-- 🆔 MY NODE -->
+    <TextView
+        android:id="@+id/tvNeighborMyId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#E3F2FD"
+        android:padding="10dp"
+        android:text="My Node ID: loading..."
+        android:textColor="#0D47A1"
+        android:textSize="13sp"
+        android:textStyle="bold" />
+
+    <!-- 📊 STATUS -->
+    <TextView
+        android:id="@+id/tvNeighborCount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F5F5F5"
+        android:padding="8dp"
+        android:text="Neighbors: 0  |  DTN: 0"
+        android:textColor="#424242"
+        android:textSize="12sp" />
+
+    <!-- 💡 INFO -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFF8E1"
+        android:padding="6dp"
+        android:text="Auto refresh every 2s • HELLO broadcast every 5s"
+        android:textColor="#795548"
+        android:textSize="11sp" />
+
+    <!-- 📡 NEIGHBOR LIST -->
+    <ListView
+        android:id="@+id/lvNeighbors"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="#E0E0E0"
+        android:dividerHeight="1dp"
+        android:padding="6dp"
+        android:clipToPadding="false"
+        android:background="#FFFFFF" />
+
+</LinearLayout>

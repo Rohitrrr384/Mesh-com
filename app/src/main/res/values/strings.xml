@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">meshcomm</string>
+    <string name="meshcomm">MeshComm</string>
+    <string name="String">📡</string>
+    <string name="neighbors">Neighbors</string>
+    <string name="starting_mesh">Starting mesh…</string>
+    <string name="to_destination_node_id">To: Destination Node ID</string>
+    <string name="type_message">Type message…</string>
+    <string name="todo">TODO</string>
+    <string name="your_name_id">Your Name / ID</string>
+    <string name="ready_to_broadcast">Ready to broadcast</string>
+    <string name="received_broadcasts">RECEIVED BROADCASTS</string>
+    <string name="new_broadcast">NEW BROADCAST</string>
+    <string name="type">Type:</string>
+    <string name="what_s_happening">What\'s happening?</string>
+    <string name="send">SEND</string>
+</resources>
